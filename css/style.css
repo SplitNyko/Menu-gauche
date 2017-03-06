@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menuLeft {
+    width: calc(60px + 1vw);
+    height: 100vh;
+    background-color: #00a386;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menuLeftMenu {
+    flex: 0.80;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menuLeftIcons {
+    flex: 7.40;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    margin-top: 4vh;
+
+
+    /*background-color: yellowgreen;*/
+}
+
+.menuLeftLanguage {
+    flex: 0.80;
+    /*background-color: lightpink;*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menuLeftIcon {
+    width: 40px;
+    height: 25px;
+
+    /*border : 1px solid white;*/
+    border-radius: 5px;
+
+
+}
+
+.menuLeftIcon:nth-child(1) {
+        justify-content:flex-start;
+}
+
+.main {
+    width: calc(100vw - (60px + 1vw));
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.open .menuLeft {
+    width: calc(160px + 1vw);
+    transition: ease-in-out 1s;
+}
+
+.yellow .menuLeft {
+    background-color: yellow;
+    transition: ease-in-out 1s;
+}
+.red .menuLeft {
+    background-color: orangered;
+    transition: ease-in-out 1s;
+}
+.blue .menuLeft {
+    background-color: lightskyblue;
+    transition: ease-in-out 1s;
+}
+.brown .menuLeft {
+    background-color: brown;
+    transition: ease-in-out 1s;
+}
+
+.material-icons {
+    font-size: 40px;
+    color :white;
+    margin-bottom : 1vh;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.material-icons:hover {
+    opacity: 1;
+}
+
+.menuLeftMenu .menuLeftIcon {
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.85;
+}
+
+.menuLeftMenu .menuLeftIcon:hover {
+    opacity: 1;
+}
+
+.menuLeftMenu .menuLeftIcon span {
+    position: absolute;
+    width: 40px;
+    height: 20%;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.menuLeftMenu .menuLeftIcon span:nth-child(1) {
+    top : 0%;
+}
+
+.menuLeftMenu .menuLeftIcon span:nth-child(2) {
+    top : 40%;
+}
+
+.menuLeftMenu .menuLeftIcon span:nth-child(3) {
+    top : 80%;
+}
