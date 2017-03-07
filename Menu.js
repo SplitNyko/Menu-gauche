@@ -1,4 +1,7 @@
 $(function () {
+
+    var colors = ['green','','','',''];
+
     $('.menuLeftMenu .menuLeftIcon').click(function(e) {
         e.preventDefault();
         $('body').toggleClass('open');
